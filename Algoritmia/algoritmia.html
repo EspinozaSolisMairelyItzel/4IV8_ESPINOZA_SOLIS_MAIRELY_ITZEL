@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de algoritmia</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="problema-container">
+            <h2 class="Problema-titulo">
+                Problema 1
+            </h2>
+            <h3>
+                Dada una lista de palabras separadas por un espacio, invierte el orden de dichas palabras. Las palabras pueden estar separadas unicamente por espacios.
+            </h3>
+            <div class="problema-content">
+                <input type="text" class="problema-input" placeholder="Ingresa las palabras separadas por un espacio: " id="p1-input">
+                <button type="button" class="problema-button" style="margin-top:1rem;" onclick="problema1()">
+                    Invertir palabras
+                </button>
+                <pre class="problema-output" id="p1-output">Esperando datos...</pre>
+            </div>
+        </div>
+       <body>
+    <div class="main-wrapper">
+        <section class="caja-ejercicio">
+            <h2 class="titulo-seccion">Ejercicio 02</h2>
+            <p class="descripcion-tarea">
+                Dados dos vectores $A = (a_1, a_2, \dots, a_n)$ y $B = (b_1, b_2, \dots, b_n)$, 
+                encuentre el producto escalar mínimo posible permitiendo la permutación de sus elementos.
+                <br>
+                <em>Fórmula: $a_1b_1 + a_2b_2 + \dots + a_nb_n$</em>
+            </p>
+            
+            <div class="contenido-ejercicio">
+                <div class="flex-tablas" style="display: flex; gap: 20px; justify-content: center;">
+                    <table class="tabla-datos">
+                        <thead>
+                            <tr><th>Vector A</th><th>Valor</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>a1</td><td><input type="number" class="input-custom" id="vA-1"></td></tr>
+                            <tr><td>a2</td><td><input type="number" class="input-custom" id="vA-2"></td></tr>
+                            <tr><td>a3</td><td><input type="number" class="input-custom" id="vA-3"></td></tr>
+                            <tr><td>a4</td><td><input type="number" class="input-custom" id="vA-4"></td></tr>
+                            <tr><td>a5</td><td><input type="number" class="input-custom" id="vA-5"></td></tr>
+                        </tbody>
+                    </table>
+                    <table class="tabla-datos">
+                        <thead>
+                            <tr><th>Vector B</th><th>Valor</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>b1</td><td><input type="number" class="input-custom" id="vB-1"></td></tr>
+                            <tr><td>b2</td><td><input type="number" class="input-custom" id="vB-2"></td></tr>
+                            <tr><td>b3</td><td><input type="number" class="input-custom" id="vB-3"></td></tr>
+                            <tr><td>b4</td><td><input type="number" class="input-custom" id="vB-4"></td></tr>
+                            <tr><td>b5</td><td><input type="number" class="input-custom" id="vB-5"></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button type="button" class="btn-ejecutar" onclick="calcularMinimoEscalar()">
+                    Obtener Producto Mínimo
+                </button>
+                <div class="area-resultado" id="res-p2">Esperando entrada...</div>
+            </div>
+        </section>
+
+        <section class="caja-ejercicio">
+            <h2 class="titulo-seccion">Ejercicio 03</h2>
+            <p class="descripcion-tarea">
+                A partir de una lista de palabras, identifica cuál posee la mayor cantidad de caracteres únicos.
+                <br>
+                <strong>Reglas:</strong> Usar mayúsculas (A-Z) y separar los términos únicamente por comas (sin espacios).
+            </p>
+            <div class="contenido-ejercicio">
+                <input type="text" class="input-texto" id="input-palabras" placeholder="Ejemplo: MANZANA,PERA,LIMON">
+                <button type="button" class="btn-ejecutar" onclick="analizarCaracteres()">
+                    Analizar Lista
+                </button>
+                <div class="area-resultado" id="res-p3">Esperando entrada...</div>
+            </div>
+        </section>
+    </div>
+    <script src="./js/algoritmia.js"></script>
+</body>
+</html>
